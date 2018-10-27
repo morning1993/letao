@@ -9,12 +9,20 @@ a:hover {
   text-decoration: none;
 }
 
+.table.table-bordered th,
+.table.table-bordered td {
+  text-align: center;
+  vertical-align: middle;
+}
 .bd_bg {
   background-color: #222d32;
 }
 
 .mt_150 {
   margin-top:150px; 
+}
+.mb_15 {
+  margin-bottom: 15px;
 }
 html,body {
   height: 100%;
