@@ -12,6 +12,7 @@ $(function () {
         pageSize: pageSize
       },
       success: function (info) {
+        
         $('tbody').html(template('tmp', info));
 
         $('#paginator').bootstrapPaginator({
