@@ -1,0 +1,42 @@
+.cart_left {
+  width: 90px;
+  height: 100%;
+  // background-color: pink;
+  float: left;
+  position: relative;
+
+  li {
+    width: 90px;
+    height: 50px;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+    text-align: center;
+    line-height: 50px;
+    background-color: pink;
+
+    &.active {
+      background-color: #fff;
+      border-right: none;
+    }
+  }
+}
+
+.cart_right {
+  height: 100%;
+  // background-color: green;
+  overflow: hidden;
+  position: relative;
+
+  li {
+    width: 33.33%;
+    float: left;
+    img {
+      width: 62px;
+      height: 62px;
+      margin: 0 auto;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}

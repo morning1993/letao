@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./lib/mui/css/mui.css">
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/category.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="it_container">
+
+    <!-- 头部 -->
+    <div class="it_header">
+      <a href="javascript:history.back();" class="icon_left">
+        <span class="mui-icon mui-icon-back"></span>
+      </a>
+      <h4>乐淘分类</h4>
+      <a href="search.html" class="icon_right">
+        <span class="fa fa-search"></span>
+      </a>
+    </div>
+
+    <!-- main -->
+    <div class="it_main">
+      <!-- 左侧 -->
+      <div class="cart_left">
+        <div class="mui-scroll-wrapper">
+          <div class="mui-scroll">
+            <!--这里放置真实显示的DOM内容-->
+            <ul>
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <!-- 右侧 -->
+      <div class="cart_right">
+        <div class="mui-scroll-wrapper">
+          <div class="mui-scroll">
+            <!--这里放置真实显示的DOM内容-->
+            <ul>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 底部 -->
+    <div class="it_footer">
+      <ul>
+        <li>
+          <a href="index.html">
+            <span class="fa fa-home"></span>
+            <p>首页</p>
+          </a>
+        </li>
+        <li class="active">
+          <a href="category.html">
+            <span class="fa fa-bars"></span>
+            <p>分类</p>
+          </a>
+        </li>
+        <li>
+          <a href="cart.html">
+            <span class="fa fa-shopping-cart"></span>
+            <p>购物车</p>
+          </a>
+        </li>
+        <li>
+          <a href="user.html">
+            <span class="fa fa-user"></span>
+            <p>个人中心</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script type="text/html" id="tmp">
+    {{ each rows v i}}
+    <li data-id="{{v.id}}" class="{{i===0?'active':''}}">
+      <a href="javascript:;">{{v.categoryName}}</a>
+    </li>
+    {{ /each }}
+  </script>
+
+  <script type="text/html" id="tmp2">
+    {{ if rows.length===0}}
+      <p>当前分类下没有数据</p>
+    {{/if}}
+    {{ each rows v i}}
+    <li>
+      <a href="#">
+        <img src="{{v.brandLogo}}" alt="">
+        <p>{{v.brandName}}</p>
+      </a>
+    </li>
+    {{/each}}
+  </script>
+  <script src="lib/mui/js/mui.js"></script>
+  <script src="js/common.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="lib/zepto/zepto.min.js"></script>
+  <script src="js/category.js"></script>
+</body>
+
+</html>

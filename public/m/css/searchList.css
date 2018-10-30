@@ -1,0 +1,21 @@
+.it_sort {
+  height: 30px;
+  background-color: #eee;
+  padding: 0 10px;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+}
+.it_sort li {
+  float: left;
+  width: 25%;
+}
+.it_sort li.active a {
+  color: orange;
+}
+.it_sort a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #666;
+}

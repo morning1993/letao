@@ -13,7 +13,6 @@ $(function () {
         pageSize: pageSize,
       },
       success: function (info) {
-
         $('tbody').html(template('tmp', info));
         //分页功能
         $('#paginator').bootstrapPaginator({
@@ -159,22 +158,22 @@ $(function () {
   })
 
   //添加商品
-  $('form').on('success.form.bv',function(e){
+  $('form').on('success.form.bv', function (e) {
     e.preventDefault();
     var param = $('form').serialize();
-    param += '&picName1='+ imgs[0].picName+'&picAddr1='+ imgs[0].picAddr;
-    param += '&picName2='+ imgs[1].picName+'&picAddr2='+ imgs[1].picAddr;
-    param += '&picName3='+ imgs[2].picName+'&picAddr3='+ imgs[2].picAddr;
-    
+    param += '&picName1=' + imgs[0].picName + '&picAddr1=' + imgs[0].picAddr;
+    param += '&picName2=' + imgs[1].picName + '&picAddr2=' + imgs[1].picAddr;
+    param += '&picName3=' + imgs[2].picName + '&picAddr3=' + imgs[2].picAddr;
+
     $.ajax({
-      type:'post',
-      url:'/product/addProduct',
-      data:param,
-      success:function(info){
+      type: 'post',
+      url: '/product/addProduct',
+      data: param,
+      success: function (info) {
         //关闭模态框
         $('.addModal').modal('hide');
         //渲染
-        page=1;
+        page = 1;
         render();
 
         //重置样式

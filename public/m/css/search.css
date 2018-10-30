@@ -1,0 +1,22 @@
+.it_history {
+  font-size: 12px;
+  padding: 0 10px;
+}
+.it_history span {
+  height: 21px;
+  line-height: 21px;
+}
+.it_history ul {
+  border: 1px dashed red;
+  border-bottom: none;
+}
+.it_history ul li {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  border-bottom: 1px dashed red;
+}
+.it_history ul li span {
+  height: 30px;
+  line-height: 30px;
+}

@@ -1,0 +1,132 @@
+html,
+body {
+  height: 100%;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.lt_container {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  overflow: hidden;
+}
+.lt_header {
+  width: 100%;
+  height: 45px;
+  background-color: #069;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}
+.lt_header .icon_left,
+.lt_header .icon_right {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 0;
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+}
+.lt_header .icon_left {
+  left: 0;
+}
+.lt_header .icon_right {
+  right: 0;
+}
+.lt_header h4 {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0;
+}
+.lt_footer {
+  width: 100%;
+  height: 55px;
+  background-color: #069;
+  bottom: 0;
+  position: absolute;
+  z-index: 999;
+}
+.lt_footer li {
+  float: left;
+  width: 25%;
+  height: 55px;
+  text-align: center;
+}
+.lt_footer li a {
+  padding-top: 10px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.lt_footer li a p {
+  color: #fff;
+  margin: 0;
+}
+.lt_footer li.active a {
+  color: orange;
+}
+.lt_footer li.active p {
+  color: orange;
+}
+.lt_main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.lt_search {
+  padding: 10px;
+  position: relative;
+}
+.lt_search input {
+  height: 34px;
+  border: 1px solid #007aff;
+  font-size: 12px;
+  margin: 0;
+}
+.lt_search button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 0 5px 5px 0;
+}
+.product {
+  padding: 0 10px 10px;
+}
+.product .item {
+  margin-top: 10px;
+  float: left;
+  width: 48%;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 10px;
+}
+.product .item:nth-child(odd) {
+  margin-right: 4%;
+}
+.product .item span:first-child {
+  color: red;
+}
+.product .item span:last-child {
+  text-decoration: line-through;
+}
+.product .item .proName {
+  height: 42px;
+}
